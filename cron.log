@@ -17,3 +17,11 @@ To github.com:s10djan/devops-backup.git
 backup.sh: line 16: git: command not found
 backup.sh: line 17: git: command not found
 backup.sh: line 18: git: command not found
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+To github.com:s10djan/devops-backup.git
+   5512415..c476182  main -> main
+backup.sh: line 45: git: command not found

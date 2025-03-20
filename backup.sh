@@ -19,3 +19,16 @@ git push origin main
 
 # Log the Backup
 echo "Backup created at $TIMESTAMP" >> backup.log
+#!/bin/bash
+
+echo "Cron job running at: $(date)" >> /home/kfdjan30/backup_cron.log
+
+# Copy file
+cp /home/kfdjan30/devops-backup/config.txt /home/kfdjan30/devops-backup/backup/config_$(date +%Y%m%d_%H%M%S).txt
+
+# Git backup
+/usr/local/bin/git -C /home/kfdjan30/devops-backup add .
+/usr/local/bin/git -C /home/kfdjan30/devops-backup commit -m "Backup: config.txt at $(date +%Y%m%d_%H%M%S)"
+/usr/local/bin/git -C /home/kfdjan30/devops-backup push origin main
+
+echo "Backup completed at: $(date)" >> /home/kfdjan30/backup_cron.log

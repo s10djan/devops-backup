@@ -697,3 +697,6 @@ remove the file manually to continue.
  create mode 100644 backup/config_20250320_210801.txt
  create mode 100644 backup/config_20250320_210901.txt
  create mode 100644 backup/config_20250320_211001.txt
+To github.com:s10djan/devops-backup.git
+   6e089a0..c44698a  main -> main
+Backup already running. Exiting.

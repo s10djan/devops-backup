@@ -301,3 +301,23 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+[main 97f9001] Backup: 20250320_183001
+ 6 files changed, 35 insertions(+)
+ create mode 100644 backup/config_20250320_182601.txt
+ create mode 100644 backup/config_20250320_182702.txt
+ create mode 100644 backup/config_20250320_182801.txt
+ create mode 100644 backup/config_20250320_182901.txt
+ create mode 100644 backup/config_20250320_183001.txt
+ssh: Could not resolve hostname github.com: Temporary failure in name resolution
+fatal: Could not read from remote repository.
+
+Please make sure you have the correct access rights
+and the repository exists.
+cp: cannot create regular file '/home/kfdjan30/devops-backup/backup/config_20250320_183011.txt': File exists
+fatal: Unable to create '/home/kfdjan30/devops-backup/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.

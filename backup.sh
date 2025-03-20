@@ -27,26 +27,26 @@ echo "Cron job running at: $(date)" >> /home/kfdjan30/backup_cron.log
 
 # Copy file
 cp /home/kfdjan30/devops-backup/config.txt /home/kfdjan30/devops-backup/backup/config_$(date +%Y%m%d_%H%M%S).txt
-
-# Git backup
-/usr/local/bin/git -C /home/kfdjan30/devops-backup add .
-/usr/local/bin/git -C /home/kfdjan30/devops-backup commit -m "Backup: config.txt at $(date +%Y%m%d_%H%M%S)"
-/usr/local/bin/git -C /home/kfdjan30/devops-backup push origin main
-
-echo "Backup completed at: $(date)" >> /home/kfdjan30/backup_cron.log
 #!/bin/bash
+LOCK_FILE="/tmp/backup.lock"
 
-# Define variables
-BACKUP_DIR="backup_$(date +'%Y-%m-%d_%H-%M-%S')"
-mkdir -p "$BACKUP_DIR"
+# Prevent multiple backups from running at the same time
+if [ -f "$LOCK_FILE" ]; then
+    echo "Backup already running. Exiting."
+    exit 1
+fi
 
-# Copy files to backup directory
-cp config.txt "$BACKUP_DIR/"
+touch "$LOCK_FILE"
+trap 'rm -f "$LOCK_FILE"' EXIT  # Remove lock file on exit
 
-# Commit changes to Git
-git add .
-git commit -m "Automated backup on $(date +'%Y-%m-%d %H:%M:%S')"
-git push origin main
+# Backup logic
+TIMESTAMP=$(date +"%Y%m%d_%H%M%S")
+BACKUP_FILE="backup/config_${TIMESTAMP}.txt"
 
-# Log the backup
-echo "Backup completed at $(date)" >> backup.log
+cp config.txt "$BACKUP_FILE"
+
+# Use full path to Git
+/usr/local/bin/git add .
+/usr/local/bin/git commit -m "Backup: config.txt at $TIMESTAMP"
+/usr/local/bin/git push origin main
+

@@ -112,3 +112,4 @@ To github.com:s10djan/devops-backup.git
 error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
 backup.sh: line 47: git: command not found
 backup.sh: line 48: git: command not found
+backup.sh: line 49: git: command not found

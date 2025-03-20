@@ -32,3 +32,19 @@ cp /home/kfdjan30/devops-backup/config.txt /home/kfdjan30/devops-backup/backup/c
 /usr/local/bin/git -C /home/kfdjan30/devops-backup push origin main
 
 echo "Backup completed at: $(date)" >> /home/kfdjan30/backup_cron.log
+#!/bin/bash
+
+# Define variables
+BACKUP_DIR="backup_$(date +'%Y-%m-%d_%H-%M-%S')"
+mkdir -p "$BACKUP_DIR"
+
+# Copy files to backup directory
+cp config.txt "$BACKUP_DIR/"
+
+# Commit changes to Git
+git add .
+git commit -m "Automated backup on $(date +'%Y-%m-%d %H:%M:%S')"
+git push origin main
+
+# Log the backup
+echo "Backup completed at $(date)" >> backup.log

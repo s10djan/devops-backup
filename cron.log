@@ -198,3 +198,11 @@ To github.com:s10djan/devops-backup.git
 To github.com:s10djan/devops-backup.git
    ec426f5..453f041  main -> main
 Backup already running. Exiting.
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 513a6ed5b6396a783d05edbd0ae25482f88577ec but expected 7a1d742a8447ad27e0ab11225af2fb933d4f6f01)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'

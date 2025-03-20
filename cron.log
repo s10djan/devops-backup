@@ -27,3 +27,7 @@ To github.com:s10djan/devops-backup.git
 backup.sh: line 45: git: command not found
 backup.sh: line 46: git: command not found
 backup.sh: line 47: git: command not found
+cp: cannot create regular file './backup/config_20250320_043001.txt': File exists
+backup.sh: line 16: git: command not found
+backup.sh: line 17: git: command not found
+backup.sh: line 18: git: command not found

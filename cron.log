@@ -31,3 +31,13 @@ cp: cannot create regular file './backup/config_20250320_043001.txt': File exist
 backup.sh: line 16: git: command not found
 backup.sh: line 17: git: command not found
 backup.sh: line 18: git: command not found
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+To github.com:s10djan/devops-backup.git
+   da6dedc..7a6567b  main -> main
+backup.sh: line 45: git: command not found
+backup.sh: line 46: git: command not found
+backup.sh: line 47: git: command not found

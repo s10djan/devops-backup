@@ -811,3 +811,5 @@ Everything up-to-date
  create mode 100644 backup/config_20250320_215006.txt
 To github.com:s10djan/devops-backup.git
    47c005f..bd5a65e  main -> main
+cp: cannot stat 'config.txt': No such file or directory
+fatal: not a git repository (or any of the parent directories): .git

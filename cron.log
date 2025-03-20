@@ -25,3 +25,5 @@ nothing to commit, working tree clean
 To github.com:s10djan/devops-backup.git
    5512415..c476182  main -> main
 backup.sh: line 45: git: command not found
+backup.sh: line 46: git: command not found
+backup.sh: line 47: git: command not found

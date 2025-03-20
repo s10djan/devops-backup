@@ -489,3 +489,8 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 81c2bd42e75c52a895593369f62eb77e2ead9018 but expected a6e4b45f7fcb2e370f9bcedde6789e5afe4f52a7)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+Backup already running. Exiting.
+cp: cannot create regular file './backup/config_20250320_201501.txt': File exists

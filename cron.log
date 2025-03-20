@@ -643,3 +643,15 @@ Everything up-to-date
  create mode 100644 backup/config_20250320_205504.txt
 To github.com:s10djan/devops-backup.git
    4ce5ec7..faec141  main -> main
+cp: cannot stat 'config.txt': No such file or directory
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+fatal: not a git repository (or any of the parent directories): .git
+[main 6a4e692] Backup: 20250320_210001
+ 7 files changed, 26 insertions(+)
+ create mode 100644 backup/config_20250320_205601.txt
+ create mode 100644 backup/config_20250320_205701.txt
+ create mode 100644 backup/config_20250320_205801.txt
+ create mode 100644 backup/config_20250320_205901.txt
+ create mode 100644 backup/config_20250320_210001.txt
+Backup already running. Exiting.

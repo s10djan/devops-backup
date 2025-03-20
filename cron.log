@@ -588,3 +588,7 @@ remove the file manually to continue.
  create mode 100644 backup/config_20250320_203801.txt
  create mode 100644 backup/config_20250320_203901.txt
  create mode 100644 backup/config_20250320_204001.txt
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at b61345b3d53e7ac21829eee2af8e51ad83f7ce07 but expected 558acedad21e4d67474a14550754a487b945a63e)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+Backup already running. Exiting.

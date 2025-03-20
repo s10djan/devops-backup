@@ -658,3 +658,20 @@ Backup already running. Exiting.
 To github.com:s10djan/devops-backup.git
    faec141..6a4e692  main -> main
 Backup already running. Exiting.
+fatal: Unable to create '/home/kfdjan30/devops-backup/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 2106adc31ff403d366ca6862d7c00fc7c5d25035 but expected 0d1064c0de3397fb3be743f1a365dced38dcccee)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+fatal: Unable to create '/home/kfdjan30/devops-backup/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.

@@ -13,9 +13,11 @@ mkdir -p $BACKUP_DIR
 cp $FILE_TO_BACKUP $BACKUP_FILE
 
 # Commit and Push Changes
-git add .
-git commit -m "Backup: $FILE_TO_BACKUP at $TIMESTAMP"
-git push origin main
+/usr/local/bin/git add .
+/usr/local/bin/git commit -m "Backup: $(date +'%Y%m%d_%H%M%S')"
+/usr/local/bin/git push origin main
+
+
 
 # Log the Backup
 echo "Backup created at $TIMESTAMP" >> backup.log

@@ -747,3 +747,6 @@ To github.com:s10djan/devops-backup.git
  create mode 100644 backup/config_20250320_212601.txt
  create mode 100644 backup/config_20250320_213013.txt
  create mode 100644 backup/config_20250320_213014.txt
+To github.com:s10djan/devops-backup.git
+   2328ad7..73181cc  main -> main
+Backup already running. Exiting.

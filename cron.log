@@ -97,3 +97,10 @@ an editor opened by 'git commit'. Please make sure all processes
 are terminated then try again. If it still fails, a git process
 may have crashed in this repository earlier:
 remove the file manually to continue.
+[main cd5a3d0] Backup: 20250320_045001
+ 4 files changed, 20 insertions(+)
+ create mode 100644 .backup.sh.swp
+ create mode 100644 backup/config_20250320_045001.txt
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at cd5a3d0250112bf598efdd738d2b8b53a66d1558 but expected 9e5529fc35383059105a37e6fe62f9c457128e34)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'

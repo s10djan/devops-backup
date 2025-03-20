@@ -1,0 +1,21 @@
+[0;1;32m●[0m cron.service - Regular background program processing daemon
+     Loaded: loaded (]8;;file://penguin/lib/systemd/system/cron.service/lib/systemd/system/cron.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+    Drop-In: /run/systemd/system/service.d
+             └─]8;;file://penguin/run/systemd/system/service.d/zzz-lxc-service.confzzz-lxc-service.conf]8;;
+     Active: [0;1;32mactive (running)[0m since Thu 2025-03-20 04:38:58 GMT; 26min ago
+       Docs: ]8;;man:cron(8)man:cron(8)]8;;
+   Main PID: 24621 (cron)
+      Tasks: 11[0;38;5;245m (limit: 4915)[0m
+     Memory: 6.3M
+     CGroup: /system.slice/cron.service
+             ├─[0;38;5;245m 1140 /usr/sbin/CRON -f[0m
+             ├─[0;38;5;245m 1141 /usr/sbin/CRON -f[0m
+             ├─[0;38;5;245m 1145 /bin/sh -c "cd /home/kfdjan30/devops-backup && /bin/bash backup.sh >> cron.log 2>&1"[0m
+             ├─[0;38;5;245m 1150 /bin/bash backup.sh[0m
+             ├─[0;38;5;245m 1151 /bin/sh -c "cd /home/kfdjan30/devops-backup && /usr/bin/env -i /bin/bash /home/kfdjan30/devops-backup/backup.sh >> /home/kfdjan30/backup_cron.log 2>&1"[0m
+             ├─[0;38;5;245m 1158 /bin/bash /home/kfdjan30/devops-backup/backup.sh[0m
+             ├─[0;38;5;245m 1249 /usr/local/bin/git push origin main[0m
+             ├─[0;38;5;245m 1251 /usr/bin/ssh git@github.com "git-receive-pack 's10djan/devops-backup.git'"[0m
+             ├─[0;38;5;245m 1254 /usr/local/bin/git push origin main[0m
+             ├─[0;38;5;245m 1255 /usr/bin/ssh git@github.com "git-receive-pack 's10djan/devops-backup.git'"[0m
+             └─[0;38;5;245m24621 /usr/sbin/cron -f[0m

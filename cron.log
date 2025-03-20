@@ -655,3 +655,6 @@ fatal: not a git repository (or any of the parent directories): .git
  create mode 100644 backup/config_20250320_205901.txt
  create mode 100644 backup/config_20250320_210001.txt
 Backup already running. Exiting.
+To github.com:s10djan/devops-backup.git
+   faec141..6a4e692  main -> main
+Backup already running. Exiting.

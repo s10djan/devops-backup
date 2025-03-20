@@ -104,3 +104,11 @@ remove the file manually to continue.
 To github.com:s10djan/devops-backup.git
  ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at cd5a3d0250112bf598efdd738d2b8b53a66d1558 but expected 9e5529fc35383059105a37e6fe62f9c457128e34)
 error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+[main bea7791] Backup: config.txt at 20250320_045004
+ 3 files changed, 13 insertions(+)
+ create mode 100644 backup/config_20250320_045004.txt
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at bea7791ae9edc7dbc364773cc01bd6fdc45abb6c but expected cd5a3d0250112bf598efdd738d2b8b53a66d1558)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+backup.sh: line 47: git: command not found
+backup.sh: line 48: git: command not found

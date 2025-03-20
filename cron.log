@@ -14,3 +14,6 @@ To github.com:s10djan/devops-backup.git
  create mode 100644 backup_2025-03-20_04-17-42/config.txt
 To github.com:s10djan/devops-backup.git
    65835c8..c674f3b  main -> main
+backup.sh: line 16: git: command not found
+backup.sh: line 17: git: command not found
+backup.sh: line 18: git: command not found

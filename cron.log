@@ -44,3 +44,12 @@ backup.sh: line 47: git: command not found
 backup.sh: line 16: git: command not found
 backup.sh: line 17: git: command not found
 backup.sh: line 18: git: command not found
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+To github.com:s10djan/devops-backup.git
+ ! [remote rejected] main -> main (cannot lock ref 'refs/heads/main': is at 99a7f357e4452f0ea435f52f94c2f326d5ecf6cc but expected 3737234ed410d6188b55e8f01a2871384112c08c)
+error: failed to push some refs to 'github.com:s10djan/devops-backup.git'
+backup.sh: line 45: git: command not found
